@@ -4,7 +4,6 @@
 var squares;
 $(document).ready(function(){
     var squares= prompt("How many squares would you like? (Creates a grid of x by x squares)");
-    clearGrid();
     mouseTracker();
     createGrid(squares);
 });
@@ -28,7 +27,7 @@ function createGrid(squares){
 function clearGrid(){
     $('#reset').on('click', function(){
         $(".grid").remove();
-        squares= prompt("How many squares would you like? (Creates a grid of x by x squares)");
+        squares= prompt("How many squares would you like? (Creates a grid of x by x squares)R");
         createGrid(squares);
 
     })
