@@ -1,5 +1,5 @@
 .container{
-    width:500px;
+    width: 500px;
     height: 500px;
     border: 1px solid black;
     margin:auto;
@@ -8,7 +8,7 @@
 
 .grid{
 
-    float:left;
-    background-color:black;
+    float: left;
+    background-color: black;
     margin: 1px;
 }
