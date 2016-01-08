@@ -6,9 +6,9 @@ $(document).ready(function(){
     if(squares==0) {
         squares = prompt("How many squares would you like? (Creates a grid of x by x squares)");
         createGrid(squares);
-
+        clearGrid();
     }
-    clearGrid();
+
 });
 
 function createGrid(squares){
