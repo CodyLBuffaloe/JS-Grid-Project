@@ -12,3 +12,8 @@
     background-color: black;
     margin: 1px;
 }
+
+#reset {
+    clear: both;
+    margin-left: 650px;
+}
