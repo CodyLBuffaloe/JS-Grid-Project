@@ -12,8 +12,8 @@ $(document).ready(function(){
 
 function createGrid(squares){
 
-    for(var i= 0;i<squares*squares;i++){
-    $('.container').append('<div class="grid"></div>');
+    for(var i= 0;i<squares*squares;i++) {
+        $('.container').append('<div class="grid"></div>');
     }
     var high= parseFloat($('.container').css('height').replace('px'," "));
     var wide= parseFloat($('.container').css('width').replace('px'," "));
