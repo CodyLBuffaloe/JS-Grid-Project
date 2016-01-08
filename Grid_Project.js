@@ -5,6 +5,17 @@ var squares = 2;
 $(document).ready(function(){
     squares= prompt("How many squares would you like? (Creates a grid of x by x squares)");
     createGrid(squares);
+
+
+
+    $(".grid").mouseenter(function () {
+        $(this).fadeOut('fast',function(){
+            $(this).css('background-color','white');
+            $(this).fadeIn('slow', function(){
+                $(this).css('background-color','black');
+            });});
+    });
+
 });
 
 function createGrid(squares){
@@ -21,3 +32,4 @@ function createGrid(squares){
     $(".grid").css('width',wide);
 
 };
+
