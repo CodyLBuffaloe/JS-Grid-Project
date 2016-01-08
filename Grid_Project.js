@@ -31,7 +31,7 @@ function clearGrid(){
         $(".grid").remove();
         squares= prompt("How many squares would you like? (Creates a grid of x by x squares)");
         createGrid(squares);
-        mouseTracker();
+       
     })
 
 }
