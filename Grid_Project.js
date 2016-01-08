@@ -1,11 +1,14 @@
 /**
  * Created by codybuffaloe on 12/21/15.
  */
-var squares;
+var squares= 0;
 $(document).ready(function(){
-    var squares= prompt("How many squares would you like? (Creates a grid of x by x squares)");
-    mouseTracker();
-    createGrid(squares);
+    if(squares==0) {
+        squares = prompt("How many squares would you like? (Creates a grid of x by x squares)");
+        createGrid(squares);
+
+    }
+    clearGrid();
 });
 
 function createGrid(squares){
@@ -22,6 +25,7 @@ function createGrid(squares){
     $(".grid").css('height',high);
     $(".grid").css('width',wide);
 
+    mouseTracker();
 };
 
 function clearGrid(){
